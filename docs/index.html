@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="top-text">
+                <h1>Tax calculator</h1>
+            </div>
+            <input type="number" class="value-input" placeholder="Enter the value of the product">
+            <div class="select-wrapper">
+                <select class="select-input">
+                    <option value="0">Select currency</option>
+                    <option value="1">USD</option>
+                    <option value="2">AZN</option>
+                    <option value="3">TRY</option>
+                </select>
+            </div>
+        <button class="btn-calculate">Calculate</button>
+        <div class="output-area">
+            <h3>Tax: <span class="tax-value"></span></h3>
+            <h3>Total: <span class="total-value"></span></h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
